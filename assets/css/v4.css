@@ -137,3 +137,29 @@ body.bntours-v3:not(.home) .intro-overlay{display:none!important}
 @keyframes bnSafeHide{to{opacity:0;visibility:hidden;pointer-events:none}}
 @media (max-width:660px){body.bntours-v3 .brand--pro img{width:166px}body.bntours-v3 .intro-panel{width:min(84vw,490px)}body.bntours-v3 .intro-panel .intro-logo{max-width:84vw}}
 @media (prefers-reduced-motion:reduce){body.bntours-v3 .intro-overlay{display:none!important}}
+
+/* Enquiry form consent: native-sized checkbox next to the complete label. */
+body.bntours-v3 .form-card .consent-field{margin-top:4px;min-width:0}
+body.bntours-v3 .form-card .consent-field .consent-label{
+  display:grid;grid-template-columns:18px minmax(0,1fr);column-gap:11px;
+  align-items:start;width:100%;margin:0;padding:0;border:0;background:transparent;
+  color:#334b58;font-family:inherit;font-size:13px;font-weight:500;
+  line-height:1.55;cursor:pointer;text-align:left;
+}
+body.bntours-v3 .form-card .consent-field input[type="checkbox"]{
+  display:block;box-sizing:border-box;appearance:auto;-webkit-appearance:checkbox;
+  width:18px!important;height:18px!important;min-width:18px;max-width:18px;
+  min-height:18px!important;max-height:18px;
+  margin:1px 0 0!important;padding:0!important;flex:0 0 18px;
+  border:initial;border-radius:3px;background:transparent;
+  accent-color:#153e53;cursor:pointer;vertical-align:top;
+}
+body.bntours-v3 .form-card .consent-field input[type="checkbox"]:focus-visible{
+  outline:2px solid #b78c52;outline-offset:3px;
+}
+body.bntours-v3 .form-card .consent-field .consent-label span{
+  display:block;min-width:0;margin:0;line-height:1.55;
+}
+body.bntours-v3 .form-card .consent-field .consent-label a{
+  text-decoration:underline;text-underline-offset:2px;
+}
