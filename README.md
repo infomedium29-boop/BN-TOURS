@@ -32,3 +32,7 @@ Na početak `data/offers.json` dodana su dva sezonska prijedloga: **Adventska pu
 
 ## V12 – mobilni prekidač jezika
 Prekidač HR/EN/DE sada je vidljiv u gornjoj mobilnoj navigaciji, odmah uz hamburger. Klik otvara izbornik jezika. Očuvane su lokalizirane poveznice i jezični kontekst putovanja.
+
+
+### V13 – strelice na karticama putovanja
+Umjesto Unicode/emoji strelice koriste se identične inline SVG strelice s fiksnim viewBoxom i potezom; dosadašnji kružni gumb i ostali elementi ostaju isti. Nisu potrebne vanjske ikone ni fontovi.

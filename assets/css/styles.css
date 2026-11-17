@@ -82,3 +82,9 @@
   .site-header .header-end .menu-btn{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;margin:0;padding:6px}
 }
 @media (max-width:359px){.site-header .header-shell{padding-inline:10px}.site-header .header-brand{width:145px;flex-basis:145px}.site-header .header-brand img{max-width:138px}.site-header .header-end{gap:2px}}
+
+/* V13: consistent non-emoji vector icons in all destination cards.
+   Inline SVG avoids platform-dependent ↗ / emoji glyph substitutions (notably iOS). */
+.mosaic-arrow{color:#fff;flex:0 0 auto;line-height:0;overflow:hidden;}
+.mosaic-arrow svg{display:block;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;}
+@media(max-width:639px){.mosaic-arrow svg{width:14px;height:14px;}}
