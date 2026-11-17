@@ -51,15 +51,15 @@
   if (intro) {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let seen = false;
-    try { seen = sessionStorage.getItem('bntours_intro_v2') === 'yes'; } catch (_) {}
+    try { seen = sessionStorage.getItem('bntours_intro_v4') === 'yes'; } catch (_) {}
     if (reduced || seen) intro.remove();
     else {
       const done = () => {
         intro.classList.add('is-exiting');
-        try { sessionStorage.setItem('bntours_intro_v2','yes'); } catch (_) {}
+        try { sessionStorage.setItem('bntours_intro_v4','yes'); } catch (_) {}
         window.setTimeout(() => intro.remove(), 850);
       };
-      window.setTimeout(done, 2200);
+      window.setTimeout(done, 1350);
     }
   }
 
