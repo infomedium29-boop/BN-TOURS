@@ -1,6 +1,6 @@
 # BN TOURS · Web stranica HR / EN / DE
 
-Statički HTML/CSS/JavaScript projekt za GitHub i Cloudflare Pages, s 63 sadržajne HTML stranice.
+Statički HTML/CSS/JavaScript projekt za GitHub i Cloudflare Pages, s 63 sadržajne HTML stranice + novi dizajn i katalog.
 
 ## Deploy
 
@@ -55,3 +55,14 @@ Za potpuno samostalan web treba s originalnih izvora preuzeti fotografije u skla
 - `/functions/`: Cloudflare Pages sitemap i SEO HTML middleware
 
 Bez WordPressa, bez baze i bez instalacijskog koraka.
+
+
+## Redizajn V3
+
+- Novi hero s tri stvarne fotografije (izmjena samo na naslovnici), centriran naslov i jasan CTA.
+- Katalog s pretraživanjem i filtrom po temama; 10 samostalnih stranica s detaljima obilaska.
+- HR / EN / DE sa zadržavanjem iste podstranice pri promjeni jezika.
+- Izleti su **prijedlozi odredišta**, nisu raspisani termini ni objavljeni aranžmani.
+- Fotografije su vanjski izvori Wikimedia Commons; nisu uključene lokalno zbog ograničenja izravnog preuzimanja. Prava i poveznice vidljive su na stranici izvora fotografija. Pri deployu provjeriti učitavanje izvora.
+- `assets/css/redesign.css` i `assets/js/redesign.js` sadrže novi vizualni sustav, filtre, hero slider i dodatne interakcije.
+- Fotografije nisu slike BN Tours vozila ni osoblja. Za objavljivanje na konačnoj domeni tražiti vlasnikove fotografije/odobrene izvore.
