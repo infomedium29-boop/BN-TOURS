@@ -47,12 +47,12 @@
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 1300 && mobileMenu?.classList.contains('is-open')) setMenu(false); }, {passive:true});
 
-  // Home-page intro: visible on every fresh entry or refresh; no session-based skip.
-  // Inner pages never cover the content with an intro screen.
+  // Show the intro only on the first visit in this browser tab/session.
+  // The head script sets the skip class before styles are loaded on subsequent pages.
   const intro = document.querySelector('.intro-overlay');
   if (intro) {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduced || !document.body.classList.contains('home')) {
+    if (reduced || !document.body.classList.contains('home') || document.documentElement.classList.contains('bn-intro-skip')) {
       intro.remove();
     } else {
       window.setTimeout(() => {
@@ -61,6 +61,11 @@
       }, 2450);
     }
   }
+
+  // A page restored from the back/forward cache must never replay the intro.
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) document.querySelector('.intro-overlay')?.remove();
+  });
 
   const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

@@ -26,3 +26,7 @@ Upload the contents of **this folder** (not the enclosing folder) to the reposit
 - Intro se prikazuje pri svakom svježem otvaranju ili osvježavanju početne stranice (HR, EN, DE). Na unutarnjim stranicama nema intruzivnog ponavljanja.
 - Ispravljena kolizija CSS pravila zbog koje je logo u introu bio nevidljiv.
 - Uvedeno vremenski ograničeno automatsko zatvaranje intro sloja, čak i ako JavaScript ne radi.
+
+
+### Intro animacija
+Intro se prikazuje samo pri prvom posjetu u otvorenoj sesiji preglednika. Navigacija između stranica, promjena jezika i osvježavanje ne pokreću intro ponovno. Za novu sesiju (novi privatni prozor ili zatvaranje kartice i ponovno otvaranje) animacija je ponovno dostupna.

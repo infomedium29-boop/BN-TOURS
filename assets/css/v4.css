@@ -163,3 +163,6 @@ body.bntours-v3 .form-card .consent-field .consent-label span{
 body.bntours-v3 .form-card .consent-field .consent-label a{
   text-decoration:underline;text-underline-offset:2px;
 }
+
+/* v8: Never flash or replay the introductory overlay during normal navigation. */
+html.bn-intro-skip body.bntours-v3 .intro-overlay{display:none!important;visibility:hidden!important;animation:none!important;pointer-events:none!important}
