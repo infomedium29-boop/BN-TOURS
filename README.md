@@ -25,3 +25,6 @@ Brief opisuje prikaz cijena, garancija, ponude za besplatnu djecu i konkretnih d
 
 ## V10 – mobilni prikaz izleta
 Na telefonima do 639 px mozaik putovanja prikazuje dvije kartice u retku; za desktop/tablet raspored nije promijenjen.
+
+## V11 – Advent i doček 2027.
+Na početak `data/offers.json` dodana su dva sezonska prijedloga: **Adventska putovanja** i **Doček Nove godine 2027.**. Imaju vlastite HR/EN/DE stranice i lokalne WebP slike, a svih 12 ranijih izleta je sačuvano. Advent je u primjernom programu prikazan kao jednodnevni izlet, a doček kao dvodnevno putovanje; stvarno trajanje, destinacija, polazak i cijena dogovaraju se s agencijom. Nema tvrdnji o potvrđenim terminima ili aktivnoj prodaji aranžmana. Fotografije su ilustrativni vizuali.

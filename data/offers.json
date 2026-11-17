@@ -1,5 +1,108 @@
 [
   {
+    "id": "adventska-putovanja",
+    "destination": "adventska-putovanja",
+    "region": "city",
+    "days": 1,
+    "span": "half",
+    "name": {
+      "hr": "Adventska putovanja",
+      "en": "Advent trips",
+      "de": "Adventsreisen"
+    },
+    "short": {
+      "hr": "Božićni sajmovi, ukrašeni trgovi i dan proveden u adventskom ozračju. Grad i polazak biramo prema dogovoru s grupom.",
+      "en": "Christmas markets, festive town squares and a day spent enjoying Advent. We plan the destination and departure with your group.",
+      "de": "Weihnachtsmärkte, festlich beleuchtete Plätze und ein Tag voller Adventsstimmung. Reiseziel und Abfahrt werden mit Ihrer Gruppe vereinbart."
+    },
+    "program": {
+      "hr": [
+        "Dogovoreni polazak prema odabranoj destinaciji i kratka stanka tijekom puta.",
+        "Dolazak na adventski sajam, slobodno vrijeme za šetnju, razgledavanje i kušanje blagdanskih specijaliteta.",
+        "Povratak u dogovoreno vrijeme; program i trajanje prilagođavaju se grupi."
+      ],
+      "en": [
+        "Departure from the agreed meeting point, with a break en route if needed.",
+        "Time at the Christmas market for strolling through decorated streets, browsing stalls and enjoying seasonal treats.",
+        "Return at the agreed time; the itinerary is tailored to your group."
+      ],
+      "de": [
+        "Abfahrt am vereinbarten Treffpunkt und bei Bedarf Pause unterwegs.",
+        "Besuch des Weihnachtsmarkts mit Zeit für beleuchtete Straßen, Marktstände und regionale Spezialitäten.",
+        "Rückfahrt zur vereinbarten Zeit; das Programm wird auf Ihre Gruppe abgestimmt."
+      ]
+    },
+    "tags": [
+      "day",
+      "group"
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/adventska-putovanja-960.webp",
+    "alt": {
+      "hr": "Osvijetljeni adventski sajam i božićne kućice – ilustrativna fotografija",
+      "en": "Illuminated Christmas market stalls – illustrative photograph",
+      "de": "Beleuchteter Weihnachtsmarkt mit Buden – Illustrationsbild"
+    }
+  },
+  {
+    "id": "docek-nove-godine-2027",
+    "destination": "docek-nove-godine-2027",
+    "region": "city",
+    "days": 2,
+    "span": "half",
+    "name": {
+      "hr": "Doček Nove godine 2027.",
+      "en": "New Year’s Eve 2027",
+      "de": "Silvesterreise 2027"
+    },
+    "short": {
+      "hr": "Zajednički doček uz blagdansku atmosferu, glazbu i novogodišnje slavlje. Odredište i sadržaj biraju se prema željama grupe.",
+      "en": "Welcome 2027 with a festive atmosphere, music and a shared celebration. Destination and programme are planned with your group.",
+      "de": "Begrüßen Sie 2027 gemeinsam mit Musik, Feststimmung und einer Silvesterfeier. Reiseziel und Programm werden individuell vereinbart."
+    },
+    "program": {
+      "hr": [
+        "Dolazak u odabrani grad i vrijeme za smještaj ili samostalni obilazak, prema dogovorenom programu.",
+        "Doček Nove godine 2027., slobodno vrijeme za slavlje i povratak sljedeći dan prema dogovorenom rasporedu."
+      ],
+      "en": [
+        "Arrival in the chosen city, with time to settle in or explore, depending on the agreed itinerary.",
+        "New Year’s Eve celebrations welcoming 2027, then return the next day according to the agreed itinerary."
+      ],
+      "de": [
+        "Anreise zum ausgewählten Reiseziel und Zeit zum Ankommen oder für einen individuellen Stadtbummel.",
+        "Silvesterfeier zum Jahreswechsel 2026/2027 am ausgewählten Ort und Rückreise am folgenden Tag nach Absprache."
+      ]
+    },
+    "tags": [
+      "multi",
+      "group"
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/docek-nove-godine-2027-960.webp",
+    "alt": {
+      "hr": "Novogodišnje slavlje uz prskalice, vatromet i čaše pjenušca – ilustrativni vizual",
+      "en": "New Year celebration with sparklers, fireworks and glasses – illustrative visual",
+      "de": "Silvesterfeier mit Wunderkerzen, Feuerwerk und Gläsern – Illustrationsbild"
+    }
+  },
+  {
     "id": "brijuni-pula",
     "destination": "brijuni-pula",
     "region": "coast",

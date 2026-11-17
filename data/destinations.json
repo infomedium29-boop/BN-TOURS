@@ -1,5 +1,55 @@
 [
   {
+    "slug": "adventska-putovanja",
+    "name": {
+      "hr": "Adventska putovanja",
+      "en": "Advent trips",
+      "de": "Adventsreisen"
+    },
+    "region": "city",
+    "image": "/assets/img/destinacije/adventska-putovanja-960.webp",
+    "intro": {
+      "hr": "Božićni sajmovi, ukrašeni trgovi i dan proveden u adventskom ozračju. Grad i polazak biramo prema dogovoru s grupom.",
+      "en": "Christmas markets, festive town squares and a day spent enjoying Advent. We plan the destination and departure with your group.",
+      "de": "Weihnachtsmärkte, festlich beleuchtete Plätze und ein Tag voller Adventsstimmung. Reiseziel und Abfahrt werden mit Ihrer Gruppe vereinbart."
+    },
+    "seo_title": {
+      "hr": "Adventska putovanja | BN Tours",
+      "en": "Advent trips | BN Tours",
+      "de": "Adventsreisen | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Božićni sajmovi, ukrašeni trgovi i dan proveden u adventskom ozračju. Grad i polazak biramo prema dogovoru s grupom.",
+      "en": "Christmas markets, festive town squares and a day spent enjoying Advent. We plan the destination and departure with your group.",
+      "de": "Weihnachtsmärkte, festlich beleuchtete Plätze und ein Tag voller Adventsstimmung. Reiseziel und Abfahrt werden mit Ihrer Gruppe vereinbart."
+    }
+  },
+  {
+    "slug": "docek-nove-godine-2027",
+    "name": {
+      "hr": "Doček Nove godine 2027.",
+      "en": "New Year’s Eve 2027",
+      "de": "Silvesterreise 2027"
+    },
+    "region": "city",
+    "image": "/assets/img/destinacije/docek-nove-godine-2027-960.webp",
+    "intro": {
+      "hr": "Zajednički doček uz blagdansku atmosferu, glazbu i novogodišnje slavlje. Odredište i sadržaj biraju se prema željama grupe.",
+      "en": "Welcome 2027 with a festive atmosphere, music and a shared celebration. Destination and programme are planned with your group.",
+      "de": "Begrüßen Sie 2027 gemeinsam mit Musik, Feststimmung und einer Silvesterfeier. Reiseziel und Programm werden individuell vereinbart."
+    },
+    "seo_title": {
+      "hr": "Doček Nove godine 2027. | BN Tours",
+      "en": "New Year’s Eve 2027 | BN Tours",
+      "de": "Silvesterreise 2027 | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Zajednički doček uz blagdansku atmosferu, glazbu i novogodišnje slavlje. Odredište i sadržaj biraju se prema željama grupe.",
+      "en": "Welcome 2027 with a festive atmosphere, music and a shared celebration. Destination and programme are planned with your group.",
+      "de": "Begrüßen Sie 2027 gemeinsam mit Musik, Feststimmung und einer Silvesterfeier. Reiseziel und Programm werden individuell vereinbart."
+    }
+  },
+  {
     "slug": "brijuni-pula",
     "name": {
       "hr": "Brijuni i Pula",
