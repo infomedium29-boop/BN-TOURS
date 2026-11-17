@@ -101,3 +101,22 @@ body.bntours-v3 .section-title,body.bntours-v3 .editorial-copy h2,body.bntours-v
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gt-card,.gt-service img,.gt-card__image img{transition:none!important}}
 
 @media(max-width:660px){body.bntours-v3.home .mobile-cta{display:none!important}}
+
+
+/* Discovery panels inspired by the provided travel-agency reference */
+.gt-discovery{padding:34px 0 22px;background:#f7f4ef;border-bottom:1px solid #e9e2d6}
+.gt-discovery__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.gt-discovery-card{background:#fff;border:1px solid #e5ddd2;border-top:4px solid var(--gt-accent);border-radius:18px;padding:22px 22px 20px;box-shadow:0 8px 28px rgba(21,47,64,.06)}
+.gt-discovery-card__head{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+.gt-discovery-card__icon{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#c28f49;flex:0 0 30px;margin-top:1px}
+.gt-discovery-card__icon svg{width:24px;height:24px;display:block}
+.gt-discovery-card__head h2{margin:0 0 4px;font-size:1.1rem;line-height:1.25;font-weight:800;color:var(--gt-deep)}
+.gt-discovery-card__head p{margin:0;color:#677883;font-size:.92rem;line-height:1.45}
+.gt-discovery-card__items{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gt-discovery-card__items a{position:relative;display:block;border:1px solid #e3dfd7;border-radius:12px;padding:14px 34px 12px 16px;background:#fff;min-height:84px;transition:border-color .2s,box-shadow .2s,transform .2s;background-image:linear-gradient(180deg,rgba(255,255,255,0),rgba(245,247,247,.4))}
+.gt-discovery-card__items a:hover{border-color:#d1b182;box-shadow:0 8px 20px rgba(21,47,64,.08);transform:translateY(-1px)}
+.gt-discovery-card__items strong{display:block;font-size:1rem;line-height:1.28;font-weight:800;color:#152f40;margin-bottom:4px}
+.gt-discovery-card__items span{display:block;font-size:.88rem;line-height:1.35;color:#6a7c86}
+.gt-discovery-card__items b{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:700;color:#c98f45}
+@media (max-width: 1120px){.gt-discovery__grid{grid-template-columns:1fr}.gt-discovery-card__items{grid-template-columns:1fr 1fr}}
+@media (max-width: 640px){.gt-discovery{padding:24px 0 14px}.gt-discovery-card{padding:18px 16px 16px;border-radius:16px}.gt-discovery-card__head{gap:12px;margin-bottom:14px}.gt-discovery-card__head h2{font-size:1.02rem}.gt-discovery-card__head p{font-size:.88rem}.gt-discovery-card__items{grid-template-columns:1fr}.gt-discovery-card__items a{min-height:auto;padding:12px 32px 11px 14px}.gt-discovery-card__items strong{font-size:.96rem}.gt-discovery-card__items span{font-size:.84rem}}
