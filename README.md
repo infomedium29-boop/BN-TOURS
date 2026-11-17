@@ -1,53 +1,57 @@
-# BN TOURS — premium višestranični demo
+# BN TOURS · Web stranica HR / EN / DE
 
-Statički HTML/CSS/JavaScript, bez npm ovisnosti i bez build procesa. Spremno za GitHub → Cloudflare Pages.
+Statički HTML/CSS/JavaScript projekt za GitHub i Cloudflare Pages, s 63 sadržajne HTML stranice.
 
-## Sadržaj
+## Deploy
 
-- Početna (`/`), školska putovanja, grupna putovanja, izleti, o nama, zatražite ponudu, kontakt
-- Politika privatnosti, kolačići, uvjeti korištenja web stranice, atribucije fotografija
-- Premium intro na prvom otvaranju u sesiji, pristupačna mobilna navigacija, animacije uz `prefers-reduced-motion`
-- Interaktivni kontaktni obrazac s validacijom, lokalnom zaštitom od spama i podrškom za Web3Forms
-- Google Maps iframe koji se učitava tek na izričit klik
-- Meta opis za svaku stranicu, Organization JSON-LD, robots, automatski sitemap na Cloudflare Pages
-- Prilagođena 404 stranica, osnovna Cloudflare zaglavlja
+1. Sadržaj ove mape prenijeti u **root** GitHub repozitorija (ne prenositi mapu kao jedan poddirektorij).
+2. Cloudflare Pages → Connect to Git → repo → **Framework preset: None**.
+3. **Build command:** prazno; **Build output directory:** `.` (root). Functions direktorij mora ostati u rootu.
+4. Nakon deploya otvoriti `https://IME-PROJEKTA.pages.dev/`, `/en/`, `/de/`, `/izleti/`.
+5. Funkcija `functions/sitemap.xml.js` na `/sitemap.xml` izlistava 63 URL-a. `functions/_middleware.js` postavlja canonical i apsolutne hreflang veze za domenu koja se koristi.
 
-## GitHub + Cloudflare Pages
+## Obrazac za upit
 
-1. Otvori novi GitHub repository i postavi **sav sadržaj ovog ZIP-a u korijen repozitorija** (ne samo ZIP kao datoteku).
-2. Cloudflare → Workers & Pages → Create → Pages → Connect to Git.
-3. Framework preset: **None**; Build command: **prazno**; Build output directory: **.** (točka, korijen projekta).
-4. Deploy. Cloudflare automatski poslužuje `index.html` i podstranice iz pojedinih direktorija.
-5. Cloudflare Pages Function generira `/sitemap.xml` s trenutnom domenom i ne traži ručnu zamjenu URL-a.
-6. Nakon povezivanja prave domene dodaj je u Google Search Console i pošalji sitemap: `https://TVOJA-DOMENA/sitemap.xml`.
+`assets/js/config.js`:
 
-## Obrazac: prije objave postaviti slanje!
+```js
+window.BN_CONFIG = {
+  web3formsAccessKey: '', // upisati važeći Web3Forms ključ
+  enquiryEmail: 'bntoursbn@hotmail.com'
+};
+```
 
-U `assets/js/config.js` upiši **Web3Forms access key** u `web3formsAccessKey` i potvrđeni primateljski e-mail u `enquiryEmail`.
+Dok ključ nije dodan, obrazac **otvara mailto** s popunjenim podacima; to nije automatsko slanje. Nakon povezivanja provjeriti dostavu e-pošte i zaštitu od spama. Kontakt koji će primati upite te poslovne podatke mora potvrditi vlasnik.
 
-Ako je ključ prazan, klik na slanje samo otvara e-mail aplikaciju i priprema poruku; stranica ne tvrdi da ju je poslala. Za prvo demonstracijsko postavljanje to je namjerno transparentan fallback. Prije stvarne kampanje poveži Web3Forms, testiraj slanje, omogući dodatnu spam zaštitu u postavkama usluge i po potrebi ukloni demonstracijsku napomenu iz obrasca.
+Iz izleta se može otvoriti obrazac s unaprijed odabranim odredištem.
 
-## Fotografije — važna napomena
+## Navigacija i jezici
 
-Fotografije su **stvarne fotografije destinacija, s javnih izvora**, ali su izvorno na vanjskim CDN-ovima (Pexels i Wikimedia). Ovaj ZIP ne sadrži kopije izvornih slika jer je preuzimanje u radnom okruženju bilo onemogućeno.
+- Glavni izbornik ima desktop dropdown (hover, fokus i klik na strelicu) te mobilni proširivi popis.
+- Jezični prekidač HR / EN / DE zadržava **istu stranicu** na prijevodu, uključujući svih deset izleta.
+- Intro na početnoj pojavljuje se samo jednom tijekom sesije i poštuje `prefers-reduced-motion`.
 
-Poveznice su u generatoru koji je izradio HTML i unutar `src` atributa HTML datoteka. Stranica zahtijeva internet za slike i Google Fonts. Ako želiš potpuno lokalnu dostavu, preuzmi odgovarajuće fotografije od autora/poslužitelja, pretvori ih u AVIF, zamijeni `src` putanje i ažuriraj atribucije. Nemoj uklanjati licence.
+## Fotografije
 
-Atribucije: `izvori-fotografija/index.html`.
+Fotografije su **prave fotografije destinacija** s Wikimedia Commons, a učitavaju se putem vanjskih HTTPS URL-ova. **Nisu lokalno spremljene u ZIP-u**. Prikaz ovisi o dostupnosti Wikimedia poslužitelja i korisničkoj internetskoj vezi. Krediti su u podnožju, na stranici `Izvori fotografija` / `Photo credits` / `Bildnachweise`.
 
-## Što je obavezno potvrditi s BN Toursom prije službene objave
+Za potpuno samostalan web treba s originalnih izvora preuzeti fotografije u skladu s pojedinačnim licencijama, optimizirati u AVIF/WebP i zamijeniti udaljene URL-ove lokalnim putanjama. Prije objave obvezno provjeriti da su svi izvori i licence točni i fotografije dostupne.
 
-- Jesu li trenutno ponuđene sve navedene vrste putovanja; prava struktura proizvoda i ponuda
-- Službeni logo, e-mail za web i telefon
-- Jesu li obvezne informacije agencije, voditelj poslova, pravila putovanja i prigovora, jamčevine/osiguranja primjenjivi i gdje se objavljuju
-- Točnost svih poslovnih podataka, kontakt adrese i režima rada
-- Pravni tekstovi od nadležnih osoba, poslije aktiviranja vanjskih alata
-- Stvarne fotografije ponude, vozila, reference i eventualne recenzije
+## Prije javne objave
 
-**Odredišta prikazana na stranici služe kao inspiracija, a ne kao potvrđeni aktivni aranžmani.**
+- Potvrditi službeni logotip (trenutno dizajniran novi prijedlog), e-mail, adresu i popis usluga.
+- Provjeriti da su destinacije koje žele javno promovirati dio stvarne ponude; **ne oglašavati izlete kao potvrđene termine**.
+- Povezati i testirati obrazac, odabrati domenu, verificirati Search Console, poslati sitemap.
+- Pravno provjeriti dokumente i obvezne informacije turističke agencije, prema stvarnom statusu djelatnosti.
+- Provjeriti fotografije u pravom browseru nakon objave; offline browser pregled neće ih učitati.
 
-## Tehničke napomene
+## Struktura
 
-- Mobilna širina i navigacija testirane su za 375px, 390px, 768px, 1440px; produkcijski QA treba završiti na live hostingu, posebno učitavanje udaljenih slika.
-- Nisam ugradio GA4 jer nema klijentske privole; naknadno dodati samo uz odgovarajući consent mode i ažuriranje politika.
-- Nema lažnih recenzija, obećanja o vlastitom voznom parku, nepodržanih cijena ni automatiziranih rezervacija.
+- `/`: hrvatski (početni jezik)
+- `/en/`: engleski
+- `/de/`: njemački
+- `/izleti/{slug}/`, `/en/trips/{slug}/`, `/de/ausfluege/{slug}/`: 10 odredišta na 3 jezika
+- `/assets/`: stilovi, JavaScript, SVG logotipi
+- `/functions/`: Cloudflare Pages sitemap i SEO HTML middleware
+
+Bez WordPressa, bez baze i bez instalacijskog koraka.

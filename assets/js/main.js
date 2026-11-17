@@ -1,124 +1,136 @@
 'use strict';
-(function () {
-  const root = document.documentElement;
+(() => {
+  const i18n = window.BN_I18N || {};
+  document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
   const header = document.querySelector('.site-header');
-  const mobileToggle = document.querySelector('.mobile-toggle');
+  const updateHeader = () => header?.classList.toggle('is-scrolled', scrollY > 32);
+  window.addEventListener('scroll', updateHeader, {passive:true}); updateHeader();
+
+  const dropdown = document.querySelector('.nav-dropdown');
+  const dropdownBtn = document.querySelector('.nav-dropdown__toggle');
+  const setDropdown = open => {
+    if (!dropdown || !dropdownBtn) return;
+    dropdown.classList.toggle('is-open', open);
+    dropdownBtn.setAttribute('aria-expanded', String(open));
+    dropdownBtn.setAttribute('aria-label', open ? (i18n.closeTrips || 'Close') : (i18n.openTrips || 'Open'));
+  };
+  dropdownBtn?.addEventListener('click', e => {
+    e.stopPropagation(); setDropdown(!dropdown.classList.contains('is-open'));
+  });
+  document.addEventListener('click', e => {
+    if (!dropdown?.contains(e.target)) setDropdown(false);
+    const language = document.querySelector('.language-switcher');
+    if (language && !language.contains(e.target)) language.open = false;
+  });
+  dropdown?.addEventListener('focusout', e => {
+    if (!dropdown.contains(e.relatedTarget)) setDropdown(false);
+  });
+
+  const toggle = document.querySelector('.mobile-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
-  const intro = document.querySelector('.intro-overlay');
-
-  const setScrolled = () => header && header.classList.toggle('is-scrolled', window.scrollY > 35);
-  setScrolled();
-  window.addEventListener('scroll', setScrolled, { passive: true });
-
-  const setMenu = (open) => {
-    if (!mobileToggle || !mobileMenu) return;
-    mobileToggle.setAttribute('aria-expanded', String(open));
-    mobileToggle.setAttribute('aria-label', open ? 'Zatvori izbornik' : 'Otvori izbornik');
+  const setMenu = open => {
+    if (!toggle || !mobileMenu) return;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? (i18n.closeMenu || 'Close') : (i18n.openMenu || 'Open'));
     mobileMenu.classList.toggle('is-open', open);
     mobileMenu.setAttribute('aria-hidden', String(!open));
     document.body.classList.toggle('nav-open', open);
+    if (!open) toggle.focus({preventScroll:true});
   };
-  mobileToggle?.addEventListener('click', () => setMenu(mobileToggle.getAttribute('aria-expanded') !== 'true'));
-  mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
-  window.addEventListener('resize', () => { if (window.innerWidth > 940) setMenu(false); });
+  toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+  mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (mobileMenu?.classList.contains('is-open')) setMenu(false);
+    setDropdown(false);
+    const language = document.querySelector('.language-switcher'); if (language) language.open = false;
+  });
+  window.addEventListener('resize', () => { if (window.innerWidth > 1300 && mobileMenu?.classList.contains('is-open')) setMenu(false); }, {passive:true});
 
+  const intro = document.querySelector('.intro-overlay');
   if (intro) {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let alreadySeen = false;
-    try { alreadySeen = sessionStorage.getItem('bn_intro_seen') === 'yes'; } catch (_) {}
-    if (reduced || alreadySeen) {
-      intro.remove();
-    } else {
-      document.body.style.overflow = 'hidden';
-      const finishIntro = () => {
+    let seen = false;
+    try { seen = sessionStorage.getItem('bntours_intro_v2') === 'yes'; } catch (_) {}
+    if (reduced || seen) intro.remove();
+    else {
+      const done = () => {
         intro.classList.add('is-exiting');
-        document.body.style.overflow = '';
-        try { sessionStorage.setItem('bn_intro_seen','yes'); } catch (_) {}
+        try { sessionStorage.setItem('bntours_intro_v2','yes'); } catch (_) {}
         window.setTimeout(() => intro.remove(), 850);
       };
-      window.setTimeout(finishIntro, 2550);
+      window.setTimeout(done, 2200);
     }
   }
 
-  const toReveal = document.querySelectorAll('.reveal');
+  const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); obs.unobserve(entry.target); } });
-    }, { threshold: .08, rootMargin: '0px 0px 20px 0px' });
-    toReveal.forEach(el => observer.observe(el));
-  } else toReveal.forEach(el => el.classList.add('visible'));
+    const observer = new IntersectionObserver((entries, self) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); self.unobserve(entry.target); } });
+    }, {threshold:0.06,rootMargin:'0px 0px 20px 0px'});
+    reveals.forEach(el => observer.observe(el));
+  } else reveals.forEach(el=>el.classList.add('visible'));
 
-  const cookieBanner = document.querySelector('.cookie-banner');
-  if (cookieBanner) {
-    let setting = null;
-    try { setting = localStorage.getItem('bn_privacy_choice'); } catch (_) {}
-    if (!setting) window.setTimeout(() => cookieBanner.classList.add('is-visible'), 8500);
-    cookieBanner.querySelectorAll('[data-consent]').forEach(btn => btn.addEventListener('click', () => {
-      try { localStorage.setItem('bn_privacy_choice', btn.dataset.consent); } catch (_) {}
-      cookieBanner.classList.remove('is-visible');
+  const banner = document.querySelector('.cookie-banner');
+  if (banner) {
+    let selected = null;
+    try { selected = localStorage.getItem('bntours_privacy_v2'); } catch(_) {}
+    if (!selected) window.setTimeout(() => banner.classList.add('is-visible'), 1700);
+    banner.querySelectorAll('[data-consent]').forEach(btn=>btn.addEventListener('click', () => {
+      try { localStorage.setItem('bntours_privacy_v2',btn.dataset.consent); } catch(_) {}
+      banner.classList.remove('is-visible');
     }));
-    document.querySelectorAll('[data-open-privacy]').forEach(btn => btn.addEventListener('click', e => {
-      e.preventDefault();cookieBanner.classList.add('is-visible');
+    document.querySelectorAll('[data-open-privacy]').forEach(a=>a.addEventListener('click', e=>{
+      e.preventDefault(); banner.classList.add('is-visible');
     }));
   }
 
-  const today = new Date();
-  const yyyy = today.getFullYear();
-  const mm = String(today.getMonth() + 1).padStart(2, '0');
-  const dd = String(today.getDate()).padStart(2, '0');
-  document.querySelectorAll('input[type="date"]').forEach(input => input.min = `${yyyy}-${mm}-${dd}`);
-
   const form = document.querySelector('[data-enquiry-form]');
   if (form) {
+    const dateMin = new Date();
+    // Use local calendar day, not UTC, when enforcing the earliest departure date.
+    const now = [dateMin.getFullYear(),String(dateMin.getMonth()+1).padStart(2,'0'),String(dateMin.getDate()).padStart(2,'0')].join('-');
+    form.querySelectorAll('input[type=date]').forEach(input=>input.min=now);
+    const firstDate = form.querySelector('#datum_polaska');
+    const lastDate = form.querySelector('#datum_povratka');
+    firstDate?.addEventListener('change',()=> { if(lastDate) {lastDate.min=firstDate.value||now;if(lastDate.value && lastDate.value<lastDate.min) lastDate.value='';} });
+    const pref = new URLSearchParams(location.search).get('destinacija');
+    if (pref) { const destInput = form.querySelector('#destinacija'); if (destInput) destInput.value=pref.slice(0,150); }
     const status = form.querySelector('[data-form-status]');
-    const submit = form.querySelector('[type=submit]');
-    const setStatus = (message, kind) => {
-      status.textContent = message;
-      status.className = 'form-status form-status--' + kind;
-      status.hidden = false;
-      status.setAttribute('role', kind === 'error' ? 'alert' : 'status');
+    const btn = form.querySelector('[type=submit]');
+    const initialButton = btn.innerHTML;
+    const setStatus = (message,type)=>{
+      status.textContent=message;
+      status.className='form-status form-status--'+type;
+      status.hidden=false;
+      status.setAttribute('role',type==='error'?'alert':'status');
     };
     form.addEventListener('submit', async event => {
       event.preventDefault();
-      if (!form.reportValidity()) return;
-      const data = new FormData(form);
-      if (data.get('website')) return; // hidden spam trap
-      const values = Object.fromEntries(data.entries());
-      const accessKey = window.BN_CONFIG?.web3formsAccessKey || '';
-      const recipient = window.BN_CONFIG?.enquiryEmail || 'bntoursbn@hotmail.com';
-      if (accessKey) {
-        submit.disabled = true;
-        submit.textContent = 'Slanje...';
+      if(!form.reportValidity()) return;
+      const data=new FormData(form);
+      if(data.get('website')) return;
+      const accessKey=window.BN_CONFIG?.web3formsAccessKey || '';
+      const recipient=window.BN_CONFIG?.enquiryEmail || 'bntoursbn@hotmail.com';
+      if(accessKey){
+        btn.disabled=true;btn.textContent=i18n.sendBusy||'Sending...';
         try {
-          const body = new FormData(form);
-          body.set('access_key', accessKey);
-          body.set('subject', 'Novi upit s web stranice BN Tours');
-          body.set('from_name', 'BN Tours web');
-          const response = await fetch('https://api.web3forms.com/submit', {method:'POST',body});
-          const result = await response.json();
-          if (!response.ok || !result.success) throw new Error(result.message || 'Slanje nije uspjelo.');
-          setStatus('Hvala! Vaš upit je poslan. Javit ćemo vam se čim ga pregledamo.', 'success');
-          form.reset();
-        } catch (_) {
-          setStatus('Slanje trenutačno nije dostupno. Molimo nazovite nas ili pošaljite poruku na '+recipient+'.', 'error');
-        } finally {
-          submit.disabled = false;
-          submit.innerHTML = 'Pošalji upit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7"/></svg>';
-        }
+          data.set('access_key',accessKey);
+          data.set('subject',i18n.formSubject||'BN Tours enquiry');
+          data.set('from_name','BN Tours website');
+          const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data});
+          const result=await response.json();
+          if(!response.ok || !result.success) throw new Error('Request failed');
+          setStatus(i18n.sendSuccess||'Sent successfully.','success'); form.reset();
+        } catch (_){setStatus((i18n.sendFail||'Please email')+' '+recipient+'.','error');}
+        finally {btn.disabled=false;btn.innerHTML=initialButton;}
       } else {
-        const labels = {
-          ime:'Ime i prezime', email:'E-mail', telefon:'Telefon', vrsta:'Vrsta putovanja',
-          polazak:'Mjesto polaska', destinacija:'Željena destinacija',
-          datum_polaska:'Datum polaska', datum_povratka:'Datum povratka',
-          putnici:'Broj putnika', napomena:'Dodatne informacije'
-        };
-        const lines = Object.keys(labels).filter(k => values[k]).map(k => labels[k] + ': ' + values[k]);
-        const subject = encodeURIComponent('Upit za putovanje – BN Tours');
-        const body = encodeURIComponent('Poštovani,\n\nzanima me organizacija putovanja.\n\n' + lines.join('\n') + '\n\nLijep pozdrav');
-        const mailto = `mailto:${recipient}?subject=${subject}&body=${body}`;
-        setStatus('Otvara se vaš program za e-poštu. Upit će biti poslan tek kad potvrdite slanje poruke.', 'success');
-        window.location.href = mailto;
+        const labels={ime:'Name',email:'Email',telefon:'Phone',vrsta:'Trip type',polazak:'Departure point',destinacija:'Destination',datum_polaska:'Departure date',datum_povratka:'Return date',putnici:'Travellers',napomena:'Notes'};
+        const lines=Object.entries(labels).filter(([k])=>data.get(k)).map(([k,label])=>label+': '+data.get(k));
+        const text=(i18n.enquiryIntro||'Hello,')+'\n\n'+lines.join('\n')+'\n\nBN Tours';
+        const subject=encodeURIComponent(i18n.formSubject||'BN Tours enquiry');
+        setStatus(i18n.sendMailto||'Your email application is opening.','success');
+        window.location.href='mailto:'+encodeURIComponent(recipient)+'?subject='+subject+'&body='+encodeURIComponent(text);
       }
     });
   }
