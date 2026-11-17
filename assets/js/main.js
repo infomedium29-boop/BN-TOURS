@@ -47,19 +47,18 @@
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 1300 && mobileMenu?.classList.contains('is-open')) setMenu(false); }, {passive:true});
 
+  // Home-page intro: visible on every fresh entry or refresh; no session-based skip.
+  // Inner pages never cover the content with an intro screen.
   const intro = document.querySelector('.intro-overlay');
   if (intro) {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let seen = false;
-    try { seen = sessionStorage.getItem('bntours_intro_v4') === 'yes'; } catch (_) {}
-    if (reduced || seen) intro.remove();
-    else {
-      const done = () => {
+    if (reduced || !document.body.classList.contains('home')) {
+      intro.remove();
+    } else {
+      window.setTimeout(() => {
         intro.classList.add('is-exiting');
-        try { sessionStorage.setItem('bntours_intro_v4','yes'); } catch (_) {}
-        window.setTimeout(() => intro.remove(), 850);
-      };
-      window.setTimeout(done, 1350);
+        window.setTimeout(() => intro.remove(), 680);
+      }, 2450);
     }
   }
 

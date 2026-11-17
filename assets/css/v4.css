@@ -120,3 +120,20 @@ body.bntours-v3 .section-title,body.bntours-v3 .editorial-copy h2,body.bntours-v
 .gt-discovery-card__items b{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:700;color:#c98f45}
 @media (max-width: 1120px){.gt-discovery__grid{grid-template-columns:1fr}.gt-discovery-card__items{grid-template-columns:1fr 1fr}}
 @media (max-width: 640px){.gt-discovery{padding:24px 0 14px}.gt-discovery-card{padding:18px 16px 16px;border-radius:16px}.gt-discovery-card__head{gap:12px;margin-bottom:14px}.gt-discovery-card__head h2{font-size:1.02rem}.gt-discovery-card__head p{font-size:.88rem}.gt-discovery-card__items{grid-template-columns:1fr}.gt-discovery-card__items a{min-height:auto;padding:12px 32px 11px 14px}.gt-discovery-card__items strong{font-size:.96rem}.gt-discovery-card__items span{font-size:.84rem}}
+
+
+/* v6 — BN Tours identity and visible, reliable intro. */
+body.bntours-v3 .brand--pro{display:flex;align-items:center;justify-content:flex-start}
+body.bntours-v3 .brand--pro img{display:block;width:207px;max-width:100%;height:auto;aspect-ratio:1600 / 321;object-fit:contain}
+body.bntours-v3 .intro-overlay{z-index:400;background:#0b3446;isolation:isolate;opacity:1;visibility:visible;animation:bnSafeHide .65s ease 2.75s both}
+body.bntours-v3 .intro-overlay::before{background:radial-gradient(ellipse at center,rgba(72,111,126,.22),rgba(11,52,70,0) 66%);opacity:1}
+body.bntours-v3 .intro-panel{z-index:1;width:min(620px,84vw);max-width:620px;display:flex;align-items:center;justify-content:center;flex-direction:column;animation:none!important}
+body.bntours-v3 .intro-panel .intro-logo{display:block!important;width:100%!important;max-width:min(580px,84vw);height:auto!important;aspect-ratio:1600/321;object-fit:contain;visibility:visible!important;clip-path:none!important;opacity:0;transform:translateY(14px);animation:bnIntroReveal 1.05s cubic-bezier(.25,.75,.25,1) .2s both!important}
+body.bntours-v3 .intro-panel::after{content:'';display:block;width:min(200px,46vw);height:2px;margin:26px auto 0;border-radius:2px;background:#d5aa6b;opacity:0;transform:scaleX(.4);animation:bnIntroUnderline 1.05s cubic-bezier(.22,1,.36,1) .76s both}
+body.bntours-v3 .intro-overlay.is-exiting{animation:none;opacity:0;visibility:hidden;pointer-events:none}
+body.bntours-v3:not(.home) .intro-overlay{display:none!important}
+@keyframes bnIntroReveal{to{opacity:1;transform:translateY(0)}}
+@keyframes bnIntroUnderline{to{opacity:1;transform:scaleX(1)}}
+@keyframes bnSafeHide{to{opacity:0;visibility:hidden;pointer-events:none}}
+@media (max-width:660px){body.bntours-v3 .brand--pro img{width:166px}body.bntours-v3 .intro-panel{width:min(84vw,490px)}body.bntours-v3 .intro-panel .intro-logo{max-width:84vw}}
+@media (prefers-reduced-motion:reduce){body.bntours-v3 .intro-overlay{display:none!important}}

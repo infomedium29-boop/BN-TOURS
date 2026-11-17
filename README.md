@@ -18,3 +18,11 @@ Upload the contents of **this folder** (not the enclosing folder) to the reposit
 - **Forms:** add the Web3Forms key in `assets/js/config.js` to enable auto-submission. Without it, the fallback opens the visitor's mail app; this is **not** a live booking engine.
 - **Business/legal:** client should approve contact info, services, legal notices, agency licensing/contract terms before public production.
 - Browser QA in a restricted offline renderer verified layout, navigation and filter logic but **could not verify the actual third-party image loads**.
+
+
+## V6 – novi logo i intro
+- Novi BN Tours logotip: `assets/icons/bn-wordmark-v6.png` i `bn-wordmark-light-v6.png`.
+- Novi favicon: `assets/icons/favicon-v6.png`.
+- Intro se prikazuje pri svakom svježem otvaranju ili osvježavanju početne stranice (HR, EN, DE). Na unutarnjim stranicama nema intruzivnog ponavljanja.
+- Ispravljena kolizija CSS pravila zbog koje je logo u introu bio nevidljiv.
+- Uvedeno vremenski ograničeno automatsko zatvaranje intro sloja, čak i ako JavaScript ne radi.
