@@ -1,0 +1,631 @@
+[
+  {
+    "id": "brijuni-pula",
+    "destination": "brijuni-pula",
+    "region": "coast",
+    "days": 2,
+    "span": "hero",
+    "name": {
+      "hr": "Brijuni i Pula",
+      "en": "Brijuni and Pula",
+      "de": "Brijuni und Pula"
+    },
+    "short": {
+      "hr": "Dva dana za Pulu, Fažanu i brijunsko otočje.",
+      "en": "Pula, Fažana and the Brijuni islands across two relaxed days.",
+      "de": "Pula, Fažana und die Brijuni-Inseln an zwei entspannten Tagen."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje pulske Arene i stare jezgre.",
+        "Fažana i izlet na Brijune, prema dostupnosti."
+      ],
+      "en": [
+        "Stroll through the historic centre of Pula and see the Roman Arena.",
+        "Visit Fažana and discuss a boat trip to Brijuni, subject to availability."
+      ],
+      "de": [
+        "Bummel durch die Altstadt von Pula und Besuch des Amphitheaters.",
+        "Fažana und möglicher Ausflug nach Brijuni, je nach Verfügbarkeit."
+      ]
+    },
+    "tags": [
+      "group",
+      "multi"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/brijuni-pula-960.webp",
+    "alt": {
+      "hr": "Brijuni i Pula — ilustracija odredišta",
+      "en": "Brijuni and Pula — destination illustration",
+      "de": "Brijuni und Pula — Reisezielillustration"
+    }
+  },
+  {
+    "id": "plitvicka-jezera",
+    "destination": "plitvicka-jezera",
+    "region": "nature",
+    "days": 1,
+    "span": "half",
+    "name": {
+      "hr": "Plitvička jezera",
+      "en": "Plitvice Lakes",
+      "de": "Plitvicer Seen"
+    },
+    "short": {
+      "hr": "Šetnja drvenim stazama uz jezera i slapove.",
+      "en": "Boardwalks, lakes and waterfalls in the national park.",
+      "de": "Holzstege, Seen und Wasserfälle im Nationalpark."
+    },
+    "program": {
+      "hr": [
+        "Dolazak i ulazak u nacionalni park.",
+        "Šetnja označenim rutama uz slobodno vrijeme."
+      ],
+      "en": [
+        "Arrive at Plitvice Lakes National Park.",
+        "Follow the marked boardwalk trails and enjoy time by the lakes."
+      ],
+      "de": [
+        "Ankunft im Nationalpark Plitvicer Seen.",
+        "Wanderung auf den markierten Holzstegen entlang der Seen."
+      ]
+    },
+    "tags": [
+      "day",
+      "school",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/plitvicka-jezera-960.webp",
+    "alt": {
+      "hr": "Plitvička jezera — ilustracija odredišta",
+      "en": "Plitvice Lakes — destination illustration",
+      "de": "Plitvicer Seen — Reisezielillustration"
+    }
+  },
+  {
+    "id": "sibenik-krka",
+    "destination": "sibenik-krka",
+    "region": "nature",
+    "days": 2,
+    "span": "third",
+    "name": {
+      "hr": "Šibenik i Krka",
+      "en": "Šibenik and Krka",
+      "de": "Šibenik und Krka"
+    },
+    "short": {
+      "hr": "Stara gradska jezgra i ljepota rijeke Krke.",
+      "en": "Šibenik’s old town and the waterfalls along the Krka River.",
+      "de": "Altstadt von Šibenik und Wasserfälle an der Krka."
+    },
+    "program": {
+      "hr": [
+        "Šetnja povijesnom jezgrom Šibenika.",
+        "Obilazak Nacionalnog parka Krka."
+      ],
+      "en": [
+        "Explore the old town and waterfront of Šibenik.",
+        "Discover the Krka National Park waterfalls on the agreed route."
+      ],
+      "de": [
+        "Bummel durch Šibeniks Altstadt und an der Uferpromenade.",
+        "Besuch der Wasserfälle des Nationalparks Krka auf der vereinbarten Route."
+      ]
+    },
+    "tags": [
+      "multi",
+      "school"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/sibenik-krka-960.webp",
+    "alt": {
+      "hr": "Šibenik i Krka — ilustracija odredišta",
+      "en": "Šibenik and Krka — destination illustration",
+      "de": "Šibenik und Krka — Reisezielillustration"
+    }
+  },
+  {
+    "id": "zadar-nin",
+    "destination": "zadar-nin",
+    "region": "coast",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Zadar i Nin",
+      "en": "Zadar and Nin",
+      "de": "Zadar und Nin"
+    },
+    "short": {
+      "hr": "Morske orgulje, rimska prošlost i Nin.",
+      "en": "The Sea Organ, Roman heritage and nearby Nin.",
+      "de": "Meeresorgel, römische Geschichte und das nahe Nin."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje stare jezgre Zadra.",
+        "Odlazak u Nin i slobodno vrijeme."
+      ],
+      "en": [
+        "Walk through Zadar’s old town and visit the Sea Organ.",
+        "Continue to Nin for sightseeing and a break."
+      ],
+      "de": [
+        "Spaziergang durch Zadars Altstadt und zur Meeresorgel.",
+        "Weiterfahrt nach Nin mit Zeit für Besichtigungen und eine Pause."
+      ]
+    },
+    "tags": [
+      "day",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/zadar-nin-960.webp",
+    "alt": {
+      "hr": "Zadar i Nin — ilustracija odredišta",
+      "en": "Zadar and Nin — destination illustration",
+      "de": "Zadar und Nin — Reisezielillustration"
+    }
+  },
+  {
+    "id": "rovinj-porec",
+    "destination": "rovinj-porec",
+    "region": "coast",
+    "days": 2,
+    "span": "wide",
+    "name": {
+      "hr": "Rovinj i Poreč",
+      "en": "Rovinj and Poreč",
+      "de": "Rovinj und Poreč"
+    },
+    "short": {
+      "hr": "Istarski gradići, uske ulice i more.",
+      "en": "Istrian old towns, winding streets and the sea.",
+      "de": "Istrische Altstädte, Gassen und das Meer."
+    },
+    "program": {
+      "hr": [
+        "Dolazak u Rovinj i šetnja starom jezgrom.",
+        "Poreč i razgledavanje prema dogovoru."
+      ],
+      "en": [
+        "Explore the narrow streets and waterfront of Rovinj.",
+        "Travel to Poreč and discover its historic town centre."
+      ],
+      "de": [
+        "Bummel durch die engen Gassen und am Wasser in Rovinj.",
+        "Weiterfahrt nach Poreč und Rundgang durch die Altstadt."
+      ]
+    },
+    "tags": [
+      "multi",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/rovinj-porec-960.webp",
+    "alt": {
+      "hr": "Rovinj i Poreč — ilustracija odredišta",
+      "en": "Rovinj and Poreč — destination illustration",
+      "de": "Rovinj und Poreč — Reisezielillustration"
+    }
+  },
+  {
+    "id": "dubrovnik",
+    "destination": "dubrovnik",
+    "region": "coast",
+    "days": 2,
+    "span": "half",
+    "name": {
+      "hr": "Dubrovnik",
+      "en": "Dubrovnik",
+      "de": "Dubrovnik"
+    },
+    "short": {
+      "hr": "Kamene ulice, gradske zidine i pogled na more.",
+      "en": "City walls, stone streets and Adriatic views.",
+      "de": "Stadtmauern, Gassen und Blick auf die Adria."
+    },
+    "program": {
+      "hr": [
+        "Dolazak, šetnja Stradunom i starom jezgrom.",
+        "Slobodno vrijeme i povratak prema dogovoru."
+      ],
+      "en": [
+        "Discover Dubrovnik’s old town and walk along Stradun.",
+        "Enjoy free time and organise the return journey with the group."
+      ],
+      "de": [
+        "Entdeckung der Altstadt von Dubrovnik und Spaziergang über den Stradun.",
+        "Freie Zeit und Rückfahrt nach Absprache mit der Gruppe."
+      ]
+    },
+    "tags": [
+      "multi",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/dubrovnik-960.webp",
+    "alt": {
+      "hr": "Dubrovnik — ilustracija odredišta",
+      "en": "Dubrovnik — destination illustration",
+      "de": "Dubrovnik — Reisezielillustration"
+    }
+  },
+  {
+    "id": "zagreb",
+    "destination": "zagreb",
+    "region": "city",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Zagreb",
+      "en": "Zagreb",
+      "de": "Zagreb"
+    },
+    "short": {
+      "hr": "Gornji grad, trgovi i kulturna događanja.",
+      "en": "Upper Town, historic squares and cultural sights.",
+      "de": "Oberstadt, historische Plätze und Kultur."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje Gornjeg grada i centra.",
+        "Slobodno vrijeme za individualni obilazak."
+      ],
+      "en": [
+        "Walk through Zagreb’s Upper Town and the city centre.",
+        "Free time for museums, cafés or independent sightseeing."
+      ],
+      "de": [
+        "Rundgang durch die Oberstadt und das Zentrum Zagrebs.",
+        "Freie Zeit für Museen, Cafés oder eigene Entdeckungen."
+      ]
+    },
+    "tags": [
+      "day",
+      "school",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/zagreb-960.webp",
+    "alt": {
+      "hr": "Zagreb — ilustracija odredišta",
+      "en": "Zagreb — destination illustration",
+      "de": "Zagreb — Reisezielillustration"
+    }
+  },
+  {
+    "id": "trakoscan-varazdin",
+    "destination": "trakoscan-varazdin",
+    "region": "city",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Trakošćan i Varaždin",
+      "en": "Trakošćan and Varaždin",
+      "de": "Trakošćan und Varaždin"
+    },
+    "short": {
+      "hr": "Dvorac uz jezero i barokne ulice Varaždina.",
+      "en": "A lakeside castle and Varaždin’s baroque streets.",
+      "de": "Schloss am See und die Barockgassen von Varaždin."
+    },
+    "program": {
+      "hr": [
+        "Obilazak dvorca Trakošćan i perivoja.",
+        "Šetnja Varaždinom i razgledavanje centra."
+      ],
+      "en": [
+        "Visit Trakošćan Castle and its parkland.",
+        "Explore the baroque streets in the centre of Varaždin."
+      ],
+      "de": [
+        "Besichtigung von Schloss Trakošćan und seinem Park.",
+        "Spaziergang durch die Barockgassen im Zentrum von Varaždin."
+      ]
+    },
+    "tags": [
+      "day",
+      "school"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/trakoscan-varazdin-960.webp",
+    "alt": {
+      "hr": "Trakošćan i Varaždin — ilustracija odredišta",
+      "en": "Trakošćan and Varaždin — destination illustration",
+      "de": "Trakošćan und Varaždin — Reisezielillustration"
+    }
+  },
+  {
+    "id": "osijek-baranja",
+    "destination": "osijek-baranja",
+    "region": "nature",
+    "days": 1,
+    "span": "half",
+    "name": {
+      "hr": "Osijek i Baranja",
+      "en": "Osijek and Baranja",
+      "de": "Osijek und Baranja"
+    },
+    "short": {
+      "hr": "Tvrđa, Drava i mirni baranjski krajolici.",
+      "en": "The old fortress, Drava River and Baranja countryside.",
+      "de": "Festung Tvrđa, Drau und die Landschaft Baranjas."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje osječke Tvrđe.",
+        "Posjet Baranji prema interesu grupe."
+      ],
+      "en": [
+        "Explore the historic Tvrđa quarter in Osijek.",
+        "Continue into Baranja with stops tailored to the group."
+      ],
+      "de": [
+        "Besichtigung des historischen Viertels Tvrđa in Osijek.",
+        "Weiterfahrt in die Baranja mit Stopps nach Gruppenwunsch."
+      ]
+    },
+    "tags": [
+      "day",
+      "group",
+      "school"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/osijek-baranja-960.webp",
+    "alt": {
+      "hr": "Osijek i Baranja — ilustracija odredišta",
+      "en": "Osijek and Baranja — destination illustration",
+      "de": "Osijek und Baranja — Reisezielillustration"
+    }
+  },
+  {
+    "id": "opatija-rijeka",
+    "destination": "opatija-rijeka",
+    "region": "coast",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Opatija i Rijeka",
+      "en": "Opatija and Rijeka",
+      "de": "Opatija und Rijeka"
+    },
+    "short": {
+      "hr": "Riječka povijest i šetnja opatijskim Lungomareom.",
+      "en": "Rijeka’s history and a stroll along Opatija’s Lungomare.",
+      "de": "Rijekas Geschichte und Opatijas Lungomare."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje središta Rijeke.",
+        "Šetnja uz more u Opatiji."
+      ],
+      "en": [
+        "Explore central Rijeka and its history.",
+        "Walk along the sea on Opatija’s Lungomare promenade."
+      ],
+      "de": [
+        "Spaziergang durch Rijekas Zentrum und seine Geschichte.",
+        "Promenade am Meer auf dem Lungomare in Opatija."
+      ]
+    },
+    "tags": [
+      "day",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/opatija-rijeka-960.webp",
+    "alt": {
+      "hr": "Opatija i Rijeka — ilustracija odredišta",
+      "en": "Opatija and Rijeka — destination illustration",
+      "de": "Opatija und Rijeka — Reisezielillustration"
+    }
+  },
+  {
+    "id": "vukovar-ilok",
+    "destination": "vukovar-ilok",
+    "region": "city",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Vukovar i Ilok",
+      "en": "Vukovar and Ilok",
+      "de": "Vukovar und Ilok"
+    },
+    "short": {
+      "hr": "Povijest uz Dunav i vinorodni krajolik Srijema.",
+      "en": "Danube-side history and the vineyards of Syrmia.",
+      "de": "Geschichte an der Donau und Weinberge Syrmiens."
+    },
+    "program": {
+      "hr": [
+        "Razgledavanje Vukovara prema dogovorenom programu.",
+        "Posjet Iloku i upoznavanje stare jezgre."
+      ],
+      "en": [
+        "Discover Vukovar on the River Danube.",
+        "Continue to Ilok and explore its historic centre."
+      ],
+      "de": [
+        "Entdecken Sie Vukovar an der Donau.",
+        "Weiterfahrt nach Ilok mit Rundgang durch die Altstadt."
+      ]
+    },
+    "tags": [
+      "day",
+      "school",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/vukovar-ilok-960.webp",
+    "alt": {
+      "hr": "Vukovar i Ilok — ilustracija odredišta",
+      "en": "Vukovar and Ilok — destination illustration",
+      "de": "Vukovar und Ilok — Reisezielillustration"
+    }
+  },
+  {
+    "id": "rastoke-karlovac",
+    "destination": "rastoke-karlovac",
+    "region": "nature",
+    "days": 1,
+    "span": "third",
+    "name": {
+      "hr": "Rastoke i Karlovac",
+      "en": "Rastoke and Karlovac",
+      "de": "Rastoke und Karlovac"
+    },
+    "short": {
+      "hr": "Mlinice na slapovima i grad na četiri rijeke.",
+      "en": "Watermill village and the city of four rivers.",
+      "de": "Wassermühlendorf und die Stadt an vier Flüssen."
+    },
+    "program": {
+      "hr": [
+        "Šetnja Rastokama i uživanje u prirodi.",
+        "Kratki obilazak Karlovca."
+      ],
+      "en": [
+        "Walk through the watermill village of Rastoke.",
+        "Stop in Karlovac and explore the city of four rivers."
+      ],
+      "de": [
+        "Spaziergang durch das Wassermühlendorf Rastoke.",
+        "Halt in Karlovac und Rundgang durch die Stadt der vier Flüsse."
+      ]
+    },
+    "tags": [
+      "day",
+      "school",
+      "group"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "price_from": null,
+    "currency": "EUR",
+    "departures": [],
+    "departure_cities": [],
+    "included": [],
+    "excluded": [],
+    "image": "/assets/img/destinacije/rastoke-karlovac-960.webp",
+    "alt": {
+      "hr": "Rastoke i Karlovac — ilustracija odredišta",
+      "en": "Rastoke and Karlovac — destination illustration",
+      "de": "Rastoke und Karlovac — Reisezielillustration"
+    }
+  }
+]

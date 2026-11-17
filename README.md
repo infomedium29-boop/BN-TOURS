@@ -1,32 +1,24 @@
-# BN Tours · Travel catalogue V4
+# BN TOURS – web stranica prema briefu (V9)
 
-Professional multilingual static presentation of BN Tours, inspired by the usability of Global Travel's catalogue (not a copy of their assets or design).
+## Pokretanje
+Statički HTML/CSS/JS bez build komande. Prenesite **sadržaj** ove mape u korijen GitHub repozitorija; Cloudflare Pages: Framework `None`, Build command prazan, Output directory `.`.
 
-## Deploy to GitHub / Cloudflare Pages
-Upload the contents of **this folder** (not the enclosing folder) to the repository root. In Cloudflare Pages: framework `None`, build command left empty, output directory `.`. The `/en/` and `/de/` folders are direct static routes.
+Lokalni test: `python -m http.server 8080` iz korijena projekta, zatim otvorite http://localhost:8080/. Nemojte otvarati HTML direktno preko `file://` jer preglednik blokira fetch `/data/offers.json`.
 
-## Structure
-- `/`, `/en/`, `/de/` – home page
-- `/izleti/`, `/en/trips/`, `/de/ausfluege/` – searchable/filterable trip lists
-- Ten trip detail URLs in each language, plus informational, enquiry, contact and legal pages
-- `assets/css/v4.css` – site redesign layer
-- `assets/icons/bn-logo.svg` – vector mark
+## Kako dodati izlet
+Uredite `data/offers.json` i `data/destinations.json`. Svi listingi, kartice i filteri čitaju podatke iz JSON-a. SEO statičke podstranice za novi izlet potrebno je generirati/izraditi posebno ili ponuditi preko `putovanje.html?id=<slug>`; 12 postojećih već je generirano.
 
-## Important before presenting / launching
-- **Images:** real destination photographs are hotlinked from Unsplash / Wikimedia Commons. They are **not included locally in the ZIP** because source-media download was not available in this environment. Confirm each image loads on your deployed site and obtain permission/appropriate credit before relying on these URLs in production. Source details listed on the photo-credits page. If an image fails, the site uses an unobtrusive plain-color fallback rather than claiming to display a photo. Replace with locally hosted authorized/optimized AVIF/WebP copies when available.
-- **Trip pages:** destination *ideas*, not confirmed BN Tours departures, bookings, prices or itineraries. All trip arrangements need verification with the client.
-- **Forms:** add the Web3Forms key in `assets/js/config.js` to enable auto-submission. Without it, the fallback opens the visitor's mail app; this is **not** a live booking engine.
-- **Business/legal:** client should approve contact info, services, legal notices, agency licensing/contract terms before public production.
-- Browser QA in a restricted offline renderer verified layout, navigation and filter logic but **could not verify the actual third-party image loads**.
+## Fotografije
+Sve slike su **lokalne**. U `/assets/img/destinacije/` su ilustrativni generirani vizuali, a ne dokumentarne fotografije navedenih destinacija, vozila ili realiziranih putovanja BN Toursa. Za konačnu javnu verziju preporučuje se zamjena stvarnim fotografijama s odgovarajućom licencijom i točnim atribucijama. Brzina i vanjski URL problemi riješeni su lokalizacijom materijala. Galerija koristi isti motiv po pojedinom izletu.
 
+## Upiti
+U `assets/js/config.json` dodajte vlastiti `web3forms_access_key` nakon potvrde adrese primatelja. Do tada obrazac **otvara e-mail program korisnika** i jasno kaže da poruka nije automatski poslana. Ne postoji fikcijska potvrda rezervacije. Honeypot je uključen.
 
-## V6 – novi logo i intro
-- Novi BN Tours logotip: `assets/icons/bn-wordmark-v6.png` i `bn-wordmark-light-v6.png`.
-- Novi favicon: `assets/icons/favicon-v6.png`.
-- Intro se prikazuje pri svakom svježem otvaranju ili osvježavanju početne stranice (HR, EN, DE). Na unutarnjim stranicama nema intruzivnog ponavljanja.
-- Ispravljena kolizija CSS pravila zbog koje je logo u introu bio nevidljiv.
-- Uvedeno vremenski ograničeno automatsko zatvaranje intro sloja, čak i ako JavaScript ne radi.
+## Važno prije objave
+Potvrditi s vlasnikom aktivne programe, polazne gradove, cijene, datume i usluge. Trenutno se ništa od toga ne predstavlja kao potvrđeno. Potvrditi email, pravne informacije te podatke turističke agencije. Nema oglasa ni analitike pa nema kolačića koji zahtijevaju privolu.
 
+## Dizajn i pravila
+HTML5, originalni CSS tokeni, ES moduli, bez frameworka, vanjskih skripti i CDN-a. Sistemski fontovi su korišteni umjesto redistribucije font datoteka. Intro je samo jednom po sesiji i isključuje se uz `prefers-reduced-motion`.
 
-### Intro animacija
-Intro se prikazuje samo pri prvom posjetu u otvorenoj sesiji preglednika. Navigacija između stranica, promjena jezika i osvježavanje ne pokreću intro ponovno. Za novu sesiju (novi privatni prozor ili zatvaranje kartice i ponovno otvaranje) animacija je ponovno dostupna.
+## Odstupanja od PDF brifa zbog nedostajućih činjenica
+Brief opisuje prikaz cijena, garancija, ponude za besplatnu djecu i konkretnih datuma. To je namjerno zamijenjeno „Cijena na upit”, razdobljima interesa i sadržajem prema dogovoru. Ne prikazivati nepodržane popuste, termine ni recenzije. Zadržana su tri jezika HR/EN/DE iz postojećeg projekta.

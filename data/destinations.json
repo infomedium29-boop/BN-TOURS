@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "brijuni-pula",
+    "name": {
+      "hr": "Brijuni i Pula",
+      "en": "Brijuni and Pula",
+      "de": "Brijuni und Pula"
+    },
+    "region": "coast",
+    "image": "/assets/img/destinacije/brijuni-pula-960.webp",
+    "intro": {
+      "hr": "Dva dana za Pulu, Fažanu i brijunsko otočje.",
+      "en": "Pula, Fažana and the Brijuni islands across two relaxed days.",
+      "de": "Pula, Fažana und die Brijuni-Inseln an zwei entspannten Tagen."
+    },
+    "seo_title": {
+      "hr": "Brijuni i Pula | BN Tours",
+      "en": "Brijuni and Pula | BN Tours",
+      "de": "Brijuni und Pula | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Dva dana za Pulu, Fažanu i brijunsko otočje.",
+      "en": "Pula, Fažana and the Brijuni islands across two relaxed days.",
+      "de": "Pula, Fažana und die Brijuni-Inseln an zwei entspannten Tagen."
+    }
+  },
+  {
+    "slug": "plitvicka-jezera",
+    "name": {
+      "hr": "Plitvička jezera",
+      "en": "Plitvice Lakes",
+      "de": "Plitvicer Seen"
+    },
+    "region": "nature",
+    "image": "/assets/img/destinacije/plitvicka-jezera-960.webp",
+    "intro": {
+      "hr": "Šetnja drvenim stazama uz jezera i slapove.",
+      "en": "Boardwalks, lakes and waterfalls in the national park.",
+      "de": "Holzstege, Seen und Wasserfälle im Nationalpark."
+    },
+    "seo_title": {
+      "hr": "Plitvička jezera | BN Tours",
+      "en": "Plitvice Lakes | BN Tours",
+      "de": "Plitvicer Seen | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Šetnja drvenim stazama uz jezera i slapove.",
+      "en": "Boardwalks, lakes and waterfalls in the national park.",
+      "de": "Holzstege, Seen und Wasserfälle im Nationalpark."
+    }
+  },
+  {
+    "slug": "sibenik-krka",
+    "name": {
+      "hr": "Šibenik i Krka",
+      "en": "Šibenik and Krka",
+      "de": "Šibenik und Krka"
+    },
+    "region": "nature",
+    "image": "/assets/img/destinacije/sibenik-krka-960.webp",
+    "intro": {
+      "hr": "Stara gradska jezgra i ljepota rijeke Krke.",
+      "en": "Šibenik’s old town and the waterfalls along the Krka River.",
+      "de": "Altstadt von Šibenik und Wasserfälle an der Krka."
+    },
+    "seo_title": {
+      "hr": "Šibenik i Krka | BN Tours",
+      "en": "Šibenik and Krka | BN Tours",
+      "de": "Šibenik und Krka | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Stara gradska jezgra i ljepota rijeke Krke.",
+      "en": "Šibenik’s old town and the waterfalls along the Krka River.",
+      "de": "Altstadt von Šibenik und Wasserfälle an der Krka."
+    }
+  },
+  {
+    "slug": "zadar-nin",
+    "name": {
+      "hr": "Zadar i Nin",
+      "en": "Zadar and Nin",
+      "de": "Zadar und Nin"
+    },
+    "region": "coast",
+    "image": "/assets/img/destinacije/zadar-nin-960.webp",
+    "intro": {
+      "hr": "Morske orgulje, rimska prošlost i Nin.",
+      "en": "The Sea Organ, Roman heritage and nearby Nin.",
+      "de": "Meeresorgel, römische Geschichte und das nahe Nin."
+    },
+    "seo_title": {
+      "hr": "Zadar i Nin | BN Tours",
+      "en": "Zadar and Nin | BN Tours",
+      "de": "Zadar und Nin | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Morske orgulje, rimska prošlost i Nin.",
+      "en": "The Sea Organ, Roman heritage and nearby Nin.",
+      "de": "Meeresorgel, römische Geschichte und das nahe Nin."
+    }
+  },
+  {
+    "slug": "rovinj-porec",
+    "name": {
+      "hr": "Rovinj i Poreč",
+      "en": "Rovinj and Poreč",
+      "de": "Rovinj und Poreč"
+    },
+    "region": "coast",
+    "image": "/assets/img/destinacije/rovinj-porec-960.webp",
+    "intro": {
+      "hr": "Istarski gradići, uske ulice i more.",
+      "en": "Istrian old towns, winding streets and the sea.",
+      "de": "Istrische Altstädte, Gassen und das Meer."
+    },
+    "seo_title": {
+      "hr": "Rovinj i Poreč | BN Tours",
+      "en": "Rovinj and Poreč | BN Tours",
+      "de": "Rovinj und Poreč | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Istarski gradići, uske ulice i more.",
+      "en": "Istrian old towns, winding streets and the sea.",
+      "de": "Istrische Altstädte, Gassen und das Meer."
+    }
+  },
+  {
+    "slug": "dubrovnik",
+    "name": {
+      "hr": "Dubrovnik",
+      "en": "Dubrovnik",
+      "de": "Dubrovnik"
+    },
+    "region": "coast",
+    "image": "/assets/img/destinacije/dubrovnik-960.webp",
+    "intro": {
+      "hr": "Kamene ulice, gradske zidine i pogled na more.",
+      "en": "City walls, stone streets and Adriatic views.",
+      "de": "Stadtmauern, Gassen und Blick auf die Adria."
+    },
+    "seo_title": {
+      "hr": "Dubrovnik | BN Tours",
+      "en": "Dubrovnik | BN Tours",
+      "de": "Dubrovnik | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Kamene ulice, gradske zidine i pogled na more.",
+      "en": "City walls, stone streets and Adriatic views.",
+      "de": "Stadtmauern, Gassen und Blick auf die Adria."
+    }
+  },
+  {
+    "slug": "zagreb",
+    "name": {
+      "hr": "Zagreb",
+      "en": "Zagreb",
+      "de": "Zagreb"
+    },
+    "region": "city",
+    "image": "/assets/img/destinacije/zagreb-960.webp",
+    "intro": {
+      "hr": "Gornji grad, trgovi i kulturna događanja.",
+      "en": "Upper Town, historic squares and cultural sights.",
+      "de": "Oberstadt, historische Plätze und Kultur."
+    },
+    "seo_title": {
+      "hr": "Zagreb | BN Tours",
+      "en": "Zagreb | BN Tours",
+      "de": "Zagreb | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Gornji grad, trgovi i kulturna događanja.",
+      "en": "Upper Town, historic squares and cultural sights.",
+      "de": "Oberstadt, historische Plätze und Kultur."
+    }
+  },
+  {
+    "slug": "trakoscan-varazdin",
+    "name": {
+      "hr": "Trakošćan i Varaždin",
+      "en": "Trakošćan and Varaždin",
+      "de": "Trakošćan und Varaždin"
+    },
+    "region": "city",
+    "image": "/assets/img/destinacije/trakoscan-varazdin-960.webp",
+    "intro": {
+      "hr": "Dvorac uz jezero i barokne ulice Varaždina.",
+      "en": "A lakeside castle and Varaždin’s baroque streets.",
+      "de": "Schloss am See und die Barockgassen von Varaždin."
+    },
+    "seo_title": {
+      "hr": "Trakošćan i Varaždin | BN Tours",
+      "en": "Trakošćan and Varaždin | BN Tours",
+      "de": "Trakošćan und Varaždin | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Dvorac uz jezero i barokne ulice Varaždina.",
+      "en": "A lakeside castle and Varaždin’s baroque streets.",
+      "de": "Schloss am See und die Barockgassen von Varaždin."
+    }
+  },
+  {
+    "slug": "osijek-baranja",
+    "name": {
+      "hr": "Osijek i Baranja",
+      "en": "Osijek and Baranja",
+      "de": "Osijek und Baranja"
+    },
+    "region": "nature",
+    "image": "/assets/img/destinacije/osijek-baranja-960.webp",
+    "intro": {
+      "hr": "Tvrđa, Drava i mirni baranjski krajolici.",
+      "en": "The old fortress, Drava River and Baranja countryside.",
+      "de": "Festung Tvrđa, Drau und die Landschaft Baranjas."
+    },
+    "seo_title": {
+      "hr": "Osijek i Baranja | BN Tours",
+      "en": "Osijek and Baranja | BN Tours",
+      "de": "Osijek und Baranja | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Tvrđa, Drava i mirni baranjski krajolici.",
+      "en": "The old fortress, Drava River and Baranja countryside.",
+      "de": "Festung Tvrđa, Drau und die Landschaft Baranjas."
+    }
+  },
+  {
+    "slug": "opatija-rijeka",
+    "name": {
+      "hr": "Opatija i Rijeka",
+      "en": "Opatija and Rijeka",
+      "de": "Opatija und Rijeka"
+    },
+    "region": "coast",
+    "image": "/assets/img/destinacije/opatija-rijeka-960.webp",
+    "intro": {
+      "hr": "Riječka povijest i šetnja opatijskim Lungomareom.",
+      "en": "Rijeka’s history and a stroll along Opatija’s Lungomare.",
+      "de": "Rijekas Geschichte und Opatijas Lungomare."
+    },
+    "seo_title": {
+      "hr": "Opatija i Rijeka | BN Tours",
+      "en": "Opatija and Rijeka | BN Tours",
+      "de": "Opatija und Rijeka | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Riječka povijest i šetnja opatijskim Lungomareom.",
+      "en": "Rijeka’s history and a stroll along Opatija’s Lungomare.",
+      "de": "Rijekas Geschichte und Opatijas Lungomare."
+    }
+  },
+  {
+    "slug": "vukovar-ilok",
+    "name": {
+      "hr": "Vukovar i Ilok",
+      "en": "Vukovar and Ilok",
+      "de": "Vukovar und Ilok"
+    },
+    "region": "city",
+    "image": "/assets/img/destinacije/vukovar-ilok-960.webp",
+    "intro": {
+      "hr": "Povijest uz Dunav i vinorodni krajolik Srijema.",
+      "en": "Danube-side history and the vineyards of Syrmia.",
+      "de": "Geschichte an der Donau und Weinberge Syrmiens."
+    },
+    "seo_title": {
+      "hr": "Vukovar i Ilok | BN Tours",
+      "en": "Vukovar and Ilok | BN Tours",
+      "de": "Vukovar und Ilok | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Povijest uz Dunav i vinorodni krajolik Srijema.",
+      "en": "Danube-side history and the vineyards of Syrmia.",
+      "de": "Geschichte an der Donau und Weinberge Syrmiens."
+    }
+  },
+  {
+    "slug": "rastoke-karlovac",
+    "name": {
+      "hr": "Rastoke i Karlovac",
+      "en": "Rastoke and Karlovac",
+      "de": "Rastoke und Karlovac"
+    },
+    "region": "nature",
+    "image": "/assets/img/destinacije/rastoke-karlovac-960.webp",
+    "intro": {
+      "hr": "Mlinice na slapovima i grad na četiri rijeke.",
+      "en": "Watermill village and the city of four rivers.",
+      "de": "Wassermühlendorf und die Stadt an vier Flüssen."
+    },
+    "seo_title": {
+      "hr": "Rastoke i Karlovac | BN Tours",
+      "en": "Rastoke and Karlovac | BN Tours",
+      "de": "Rastoke und Karlovac | BN Tours"
+    },
+    "seo_description": {
+      "hr": "Mlinice na slapovima i grad na četiri rijeke.",
+      "en": "Watermill village and the city of four rivers.",
+      "de": "Wassermühlendorf und die Stadt an vier Flüssen."
+    }
+  }
+]
