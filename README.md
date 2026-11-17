@@ -22,3 +22,6 @@ HTML5, originalni CSS tokeni, ES moduli, bez frameworka, vanjskih skripti i CDN-
 
 ## Odstupanja od PDF brifa zbog nedostajućih činjenica
 Brief opisuje prikaz cijena, garancija, ponude za besplatnu djecu i konkretnih datuma. To je namjerno zamijenjeno „Cijena na upit”, razdobljima interesa i sadržajem prema dogovoru. Ne prikazivati nepodržane popuste, termine ni recenzije. Zadržana su tri jezika HR/EN/DE iz postojećeg projekta.
+
+## V10 – mobilni prikaz izleta
+Na telefonima do 639 px mozaik putovanja prikazuje dvije kartice u retku; za desktop/tablet raspored nije promijenjen.

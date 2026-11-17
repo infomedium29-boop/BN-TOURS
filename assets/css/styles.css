@@ -30,3 +30,40 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}.intro{display:none!important}}
 
 .selected-departure{border-left:3px solid var(--gold);background:#f4f6f5;padding:12px 15px;margin-bottom:18px;color:var(--body);font-weight:700;font-size:.88rem}.selected-departure a{text-decoration:underline;color:var(--brand)}
+
+/* V10: two destination tiles per row on phones, without changing desktop/tablet. */
+@media (max-width: 639px) {
+  .mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: clamp(195px, 57vw, 236px);
+    gap: 9px;
+  }
+  .mosaic-card,
+  .mosaic-card[data-span="hero"],
+  .mosaic-card[data-span="wide"],
+  .mosaic-card[data-span="half"],
+  .mosaic-card[data-span="third"] {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-width: 0;
+  }
+  .mosaic-content {
+    padding: 11px 10px 10px;
+    gap: 4px;
+  }
+  .mosaic-content strong,
+  .mosaic-card[data-span="hero"] .mosaic-content strong {
+    font-size: clamp(1.1rem, 4.75vw, 1.45rem);
+    line-height: 1.02;
+    overflow-wrap: break-word;
+  }
+  .mosaic-content small { font-size: .7rem; line-height: 1.25; }
+  .mosaic-content .mosaic-bottom { gap: 3px; margin-top: 5px; }
+  .mosaic-price { font-size: .72rem; line-height: 1.25; }
+  .mosaic-arrow {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    font-size: 15px;
+  }
+}
