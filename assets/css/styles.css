@@ -88,3 +88,8 @@
 .mosaic-arrow{color:#fff;flex:0 0 auto;line-height:0;overflow:hidden;}
 .mosaic-arrow svg{display:block;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;}
 @media(max-width:639px){.mosaic-arrow svg{width:14px;height:14px;}}
+
+/* Consistent arrow icons across Safari, Chrome and mobile browsers: never use Unicode/emoji for link arrows. */
+.ui-link-arrow{display:inline-block;width:1em;height:1em;flex:none;vertical-align:-.12em;color:inherit;fill:none;stroke:currentColor;margin-left:.22em}
+.btn .ui-link-arrow{margin-left:0;width:1.05em;height:1.05em}
+.ui-link-arrow path{stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
