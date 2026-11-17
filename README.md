@@ -28,3 +28,7 @@ Na telefonima do 639 px mozaik putovanja prikazuje dvije kartice u retku; za des
 
 ## V11 – Advent i doček 2027.
 Na početak `data/offers.json` dodana su dva sezonska prijedloga: **Adventska putovanja** i **Doček Nove godine 2027.**. Imaju vlastite HR/EN/DE stranice i lokalne WebP slike, a svih 12 ranijih izleta je sačuvano. Advent je u primjernom programu prikazan kao jednodnevni izlet, a doček kao dvodnevno putovanje; stvarno trajanje, destinacija, polazak i cijena dogovaraju se s agencijom. Nema tvrdnji o potvrđenim terminima ili aktivnoj prodaji aranžmana. Fotografije su ilustrativni vizuali.
+
+
+## V12 – mobilni prekidač jezika
+Prekidač HR/EN/DE sada je vidljiv u gornjoj mobilnoj navigaciji, odmah uz hamburger. Klik otvara izbornik jezika. Očuvane su lokalizirane poveznice i jezični kontekst putovanja.
